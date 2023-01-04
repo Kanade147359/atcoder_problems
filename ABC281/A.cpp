@@ -2,12 +2,16 @@
 using namespace std;
 #define rep(i, n) for (int i = 0, i < (int)(n); i++)
 
-int N;
+
 int main() {
+    int N;
     cin >> N;
     int num = N;
-    rep(i, N+1){
+    while (true) {
         cout << num << endl;
-        num - 1;
+        if (num == 0){
+            break;
+        }
+        num -= 1;
     }
 }
